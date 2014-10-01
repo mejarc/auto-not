@@ -1,0 +1,20 @@
+{
+  "background_page": "background.html",
+  "content_scripts": [{
+    "css": "style.css",
+    "js": "app.js",
+    "matches": [ "http://*/**", "https://*/*" ]
+  }],
+  "description": "Stop autoplay on HTML5 video and audio elements by pressing 
+  the Escape key",
+  "icons": {
+    "128": "icon128.png",
+    "16": "icon16.png",
+    "48": "icon48.png"
+  },
+  "key": "",
+  "name": "Auto-Not",
+  "options_page": "options.html",
+  "update_url": "",
+  "version": "0.1"
+}
