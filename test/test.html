@@ -3,6 +3,7 @@
   <head>
     <title>Auto-not Test Web Page
     </title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
   </head>
   <body>
 <h1>Auto-not Test Web Page</h1>
@@ -24,7 +25,6 @@
               <p>Your browser doesn't support the <code>audio</code> element, so you won't need this extension at all.</p>
             </audio>
         </section>
-
         <footer>
           Media sources:
           <ul><li>
@@ -33,5 +33,19 @@
             <a href="//cylinders.library.ucsb.edu/search.php">the Cylinder Preservation and Digitization Project, Donald C. Davidson Library, University of California, Santa Barbara</a>
           </li></ul>
         </footer>
+        <div id="mocha"></div>
+        <script src="../node_modules/mocha/mocha.js"></script>
+        <script src="../node_modules/chai/chai.js"></script>
+        
+        <script>
+            var expect = chai.expect;
+            mocha.ui('bdd');
+            mocha.reporter('html');
+        </script>
+        <script src="../app.js"></script>
+        <script src="app_test.js"></script>
+        <script>
+            mocha.run();
+        </script>
   </body>
 </html>

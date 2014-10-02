@@ -8,16 +8,17 @@ A Chrome extension to pause autoplay on HTML5 `video` and `audio` content. No ne
 
 ##Running the tests
 
-- Install [`mocha`](http://visionmedia.github.io/mocha/) and [`expect.js`](https://github.com/LearnBoost/expect.js/) with NPM:
+- Install [`mocha`](http://visionmedia.github.io/mocha/) and [`chai`](http://chaijs.com/guide/installation/) with NPM:
 
 ````
 $ npm install mocha
 ````
 
 ````
-$ npm install expect.js
+$ npm install chai
 ````
 
-- Run the unit tests with `$ mocha`
+
+- View the unit test results in `test/test.html`.
 
 Much inspiration taken from the wholly essential [Gif Stopper](https://chrome.google.com/webstore/detail/gif-stopper/eaebhojnielfeoillcfnbmkgliokndkm) extension by [Terry Moore](http://motersho.com/blog/).
