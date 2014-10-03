@@ -39,6 +39,6 @@ function keyHandler(e){
 }
 
 /** 
-* Attaches removal to onKeydown of the ESC key
+* Attachs removal to onKeydown of the ESC key
 */
 document.addEventListener('keydown', keyHandler, true);
