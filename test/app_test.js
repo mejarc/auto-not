@@ -1,9 +1,21 @@
 describe('Auto-not', function(){
+  var fixture = findAutoplay();
+
   describe('#findAutoplay()', function(){
-    it('finds all elements on a page with an `autoplay` attribute', function(){
-      var items = findAutoplay();
-      expect(items).to.have.length(2);
+    it('finds all DOM elements with an `autoplay` attribute', function(){
+      expect(fixture).to.have.length(2);
     });
+  });
+
+  describe('#removeAutoplay()', function(){
+    it('removes all DOM elements with an `autoplay` attribute', function(){
+      removeAutoplay(fixture);
+      expect(findAutoplay()).to.have.length(0);
+    });
+  });
+
+  describe('#keyHandler()', function(){
+
   });
 
 });
