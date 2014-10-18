@@ -1,23 +1,18 @@
 {
-  "manifest-version": 2,
+  "manifest_version": 2,
   "name": "Auto-Not",
   "description": "Stop autoplay on HTML5 video and audio elements by pressing 
   the Escape key",
-  "background_page": "background.html",
   "content_scripts": [{
-    "css": "style.css",
-    "js": "app.js",
-    "matches": [ "http://*/**", "https://*/*" ]
+    "matches": ["http://*/*", "https://*/*"],
+    "css": ["style.css"],
+    "js": ["app.js"]
   }],
   "icons": {
     "128": "icon128.png",
     "16": "icon16.png",
     "48": "icon48.png"
   },
-  "key": "",
   "author": "Melanie Archer",
-  "background": {
-    "persistent": false
-  },
   "version": "0.1"
 }
