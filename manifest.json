@@ -5,7 +5,6 @@
   the Escape key",
   "content_scripts": [{
     "matches": ["http://*/*", "https://*/*"],
-    "css": ["style.css"],
     "js": ["app.js"]
   }],
   "icons": {
