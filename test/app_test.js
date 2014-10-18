@@ -14,8 +14,11 @@ describe('Auto-not', function(){
     });
   });
 
-  describe('#keyHandler()', function(){
-
+  describe('adding listener', function(){
+    it('attachs a keydown event to `document', function(){
+      var listener = getEventListeners(document); // doesn't work outside of console???
+      expect(listener).to.include('keydown');
+    });
   });
 
 });
