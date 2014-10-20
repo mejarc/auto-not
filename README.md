@@ -1,10 +1,16 @@
 auto-not
 ========
 
-A Chrome extension to pause autoplay on HTML5 `video` and `audio` content. No need to revisit the horrible olden times of [Shockwave or MIDI file ambush](http://xkcd.com/134/).
+A Chrome extension to remove autoplaying HTML5 `video` and `audio` content from a Web page. No need to revisit the horrible olden times of [Shockwave or MIDI file ambush](http://xkcd.com/134/).
 
 
 ##Installation
+Visit [the Chrome Web Store](https://chrome.google.com/webstore/detail/auto-not/oboppjmmbnkmcemilmahflckpipomcpe), and click to install.
+
+##Removal
+* Open `chrome://extensions` in your browser
+* Click the traschcan icon to the right of the Auto-not name:
+![screenshot of removal](removal.png)
 
 ##Running the tests
 
