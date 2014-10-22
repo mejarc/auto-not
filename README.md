@@ -27,4 +27,8 @@ $ npm install chai
 
 - View the unit test results in `test/test.html`.
 
+##Acknowledgements
+
 Much inspiration taken from the wholly essential [Gif Stopper](https://chrome.google.com/webstore/detail/gif-stopper/eaebhojnielfeoillcfnbmkgliokndkm) extension by [Terry Moore](http://motersho.com/blog/).
+
+Much gratitude to testers Robin Pentola and [Erin Joan Snyder](@ErinJoan)
