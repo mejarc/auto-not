@@ -31,4 +31,4 @@ $ npm install chai
 
 Much inspiration taken from the wholly essential [Gif Stopper](https://chrome.google.com/webstore/detail/gif-stopper/eaebhojnielfeoillcfnbmkgliokndkm) extension by [Terry Moore](http://motersho.com/blog/).
 
-Much gratitude to testers Robin Pentola and [Erin Joan Snyder](@ErinJoan)
+Much gratitude to testers Robin Pentola and [Erin Joan Snyder](https://github.com/ErinJoan).
