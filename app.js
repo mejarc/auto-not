@@ -1,10 +1,12 @@
+// use strict;
+
 /** 
 * Finds all elements with the `autoplay` attribute
 *  @returns {Array} NodeList of elements
 */
 
 function findAutoplay(){
-  var items = document.querySelectorAll('*[autoplay]')
+  var items = document.querySelectorAll('*[autoplay]');
   return items;
 }
 
@@ -22,6 +24,29 @@ function removeAutoplay(items){
   }
 }
 
+/**
+* Gets the current value of `autoplay` on
+* a given node
+**/
+
+function reportAutoplay(item){
+  return item.getAttribute('autoplay');
+}
+
+/** 
+* Iterates through all elements with the `autoplay` attribute
+* and toggles that value
+*/
+
+function toggleAutoplay(item){
+  var val = reportAutoplay(item);
+  if (val == true){
+    console.log('true');
+  }
+  else {
+    item.setAttribute('autoplay') = true;
+  }
+}
 /** 
 * Verifies that the ESC key was pressed,
 * and calls the functions for removing autoplaying nodes.
@@ -34,7 +59,7 @@ function keyHandler(e){
   }
   if (e.keyCode === 27){
     var items = findAutoplay();
-    removeAutoplay(items);
+    toggleAutoplay(items[0]);
   }
 }
 
