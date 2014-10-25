@@ -10,46 +10,44 @@ function findAutoplay(){
   return items;
 }
 
-/** 
-* Iterates through all elements with the `autoplay` attribute
-* and removes those nodes using DOM Level 4 method.
-* @param {Array} items
-*/
+// /**
+// * Remove the `autoplay` attribute from all elements,
+// * whether or not it's set to true
+// * @param {Array} items
+// */
 
-function removeAutoplay(items){
-  var i = 0,
-      len = items.length;
-  for (; i < len; i++){
-    items[i].remove();
-  }
-}
+// function removeAutoplayAttribute(items){
+//   for (var i = 0; i < items.length; i++){
+//     items[i].removeAttribute('autoplay');
+//   }
+// }
 
 /**
-* Gets the current value of `autoplay` on
+* Gets the current value of `paused` on
 * a given node
+* @returns {Boolean}
 **/
 
-function reportAutoplay(item){
-  return item.getAttribute('autoplay');
+function reportPlaybackStatus(item){
+  return item.paused;
 }
 
 /** 
-* Iterates through all elements with the `autoplay` attribute
-* and toggles that value
+* Toggles the playback of a given video or audio element
+* @param {Object} item
 */
 
 function toggleAutoplay(item){
-  var val = reportAutoplay(item);
-  if (val == true){
-    console.log('true');
-  }
-  else {
-    item.setAttribute('autoplay') = true;
-  }
+  var isPlaying = reportPlaybackStatus(item);
+  console.log('item' + item);
+  console.log('item paused?' + isPlaying);
+  isPlaying === false? item.pause() : item.play();
+  console.log('item playing?' + isPlaying);
 }
 /** 
 * Verifies that the ESC key was pressed,
-* and calls the functions for removing autoplaying nodes.
+* and calls the functions for removing `autoplay` and pausing/resuming
+* playback.
 *  @param  {document#event:keydown} event
 */
 
@@ -59,6 +57,7 @@ function keyHandler(e){
   }
   if (e.keyCode === 27){
     var items = findAutoplay();
+    // removeAutoplayAttribute(items);
     toggleAutoplay(items[0]);
   }
 }

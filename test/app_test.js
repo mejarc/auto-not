@@ -6,16 +6,16 @@ describe('Auto-not', function(){
       expect(fixture).to.have.length(2);
     });
   });
+  
+describe('#reportPlaybackStatus()', function(){
+  it('reports whether an element is paused or not', function(){
+    var report = reportPlaybackStatus(fixture);
+    expect(report).to.eq(false);
+  });
+});
 
-  // describe('#removeAutoplay()', function(){
-  //   it('removes all DOM elements with an `autoplay` attribute', function(){
-  //     removeAutoplay(fixture);
-  //     expect(findAutoplay()).to.have.length(0);
-  //   });
-  // });
-
-  describe('#toggleAutoplay()', function(){
-      it('toggles the autoplay attribute on those elements unfortunately given one', function(){
+  describe('#togglePlayback()', function(){
+      xit('toggles playback on video and audio elements', function(){
         var item = fixture[0],
             itemOriginalAttr = item.getAttribute('autoplay');
         toggleAutoplay(item);
