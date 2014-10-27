@@ -1,4 +1,4 @@
-// use strict;
+'use strict';
 
 /** 
 * Finds all elements with the `autoplay` attribute
@@ -9,18 +9,6 @@ function findAutoplay(){
   var items = document.querySelectorAll('*[autoplay]');
   return items;
 }
-
-// /**
-// * Remove the `autoplay` attribute from all elements,
-// * whether or not it's set to true
-// * @param {Array} items
-// */
-
-// function removeAutoplayAttribute(items){
-//   for (var i = 0; i < items.length; i++){
-//     items[i].removeAttribute('autoplay');
-//   }
-// }
 
 /**
 * Gets the current value of `paused` on
@@ -37,12 +25,9 @@ function reportPlaybackStatus(item){
 * @param {Object} item
 */
 
-function toggleAutoplay(item){
+function togglePlayback(item){
   var isPlaying = reportPlaybackStatus(item);
-  console.log('item' + item);
-  console.log('item paused?' + isPlaying);
   isPlaying === false? item.pause() : item.play();
-  console.log('item playing?' + isPlaying);
 }
 /** 
 * Verifies that the ESC key was pressed,
@@ -57,8 +42,9 @@ function keyHandler(e){
   }
   if (e.keyCode === 27){
     var items = findAutoplay();
-    // removeAutoplayAttribute(items);
-    toggleAutoplay(items[0]);
+    for (var i = 0; i < items.length; i++){
+      togglePlayback(items[i]);
+    }
   }
 }
 
