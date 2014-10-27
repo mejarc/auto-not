@@ -31,7 +31,7 @@ function togglePlayback(item){
 }
 /** 
 * Verifies that the ESC key was pressed,
-* and calls the functions for removing `autoplay` and pausing/resuming
+* and calls the functions for pausing/resuming
 * playback.
 *  @param  {document#event:keydown} event
 */
@@ -44,6 +44,7 @@ function keyHandler(e){
     var items = findAutoplay();
     for (var i = 0; i < items.length; i++){
       togglePlayback(items[i]);
+      console.log('here!!!!');
     }
   }
 }
