@@ -15,7 +15,7 @@ Visit [the Chrome Web Store](https://chrome.google.com/webstore/detail/auto-not/
 ##Usage
 When confronted by unwanted motion pictures or sounds on a web page, try pressing the "Escape " key. If you have Auto-not installed **and** the annoyances have been brought into the Web page you're trying to read with the HTML5 `autoplay` attribute, you will observe the video(s) removed and audio playback paused.
 
-Press ESC again to resume playback.
+Refresh the browser page to restore playback.
 
 ##Running the tests
 
