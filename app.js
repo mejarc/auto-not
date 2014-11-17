@@ -4,7 +4,7 @@
 */
 
 function findAutoplay(){
-  var items = document.querySelectorAll('*[autoplay]');
+  var items = document.querySelectorAll('*[autoplay]')
   return items;
 }
 
