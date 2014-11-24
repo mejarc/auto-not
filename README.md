@@ -17,7 +17,23 @@ When confronted by unwanted motion pictures or sounds on a web page, try pressin
 
 Refresh the browser page to restore playback.
 
-##Running the tests
+##Generating the API documentation
+ - Install [`jsdoc`](http://usejsdoc.org/index.html):
+
+````
+$ npm install jsdoc
+````
+
+- Generate the documentation
+
+````
+$ cd auto-not
+$ jsdoc app.js
+````
+
+- View the documentation at `auto-not/out/index.html`
+
+ ##Running the tests
 
 - Install [`mocha`](http://visionmedia.github.io/mocha/) and [`chai`](http://chaijs.com/guide/installation/) with NPM:
 
@@ -28,7 +44,6 @@ $ npm install mocha
 ````
 $ npm install chai
 ````
-
 
 - View the unit test results in `test/test.html`.
 
