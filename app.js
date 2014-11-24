@@ -1,3 +1,9 @@
+/**
+ * @fileOverview Main script for the Auto-not Chrome extension
+ * @author Melanie Archer
+ * @version 0.3
+ */
+
 /** 
 * Finds all elements with the `autoplay` attribute
 *  @returns {Array} NodeList of elements
