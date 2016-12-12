@@ -10,9 +10,9 @@
 *  @returns {Array} NodeList of elements
 */
 
-function findAutoplay(){
+const findAutoplay = () => {
   "use strict";
-  var items = document.querySelectorAll("*[autoplay]");
+  let items = document.querySelectorAll("*[autoplay]");
   return items;
 }
 
@@ -22,11 +22,9 @@ function findAutoplay(){
 * @param {Array} items
 */
 
-function removeAutoplay(items){
+const removeAutoplay = (items) => {
   "use strict";
-  var i = 0,
-      len = items.length;
-  for (; i < len; i++){
+  for (let i = 0; i < items.length; i++){
     items[i].remove();
   }
 }
@@ -37,13 +35,13 @@ function removeAutoplay(items){
 *  @param  {document#event:keydown} event
 */
 
-function keyHandler(e){
+const keyHandler = (e) => {
   "use strict";
   if (!e){
     e = event;
   }
   if (e.keyCode === 27){
-    var items = findAutoplay();
+    let items = findAutoplay();
     removeAutoplay(items);
   }
 }
