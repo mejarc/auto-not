@@ -35,7 +35,7 @@ $ jsdoc app.js
 
  ## Running the tests
 
-- Install [`mocha`](http://visionmedia.github.io/mocha/) and [`chai`](http://chaijs.com/guide/installation/) with NPM:
+- Install [`mocha`](http://mochajs.org/) and [`chai`](http://chaijs.com/guide/installation/) with NPM:
 
 ````
 $ npm install mocha
